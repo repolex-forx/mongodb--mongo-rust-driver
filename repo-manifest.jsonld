@@ -6,10 +6,10 @@
   "gh:owner": "mongodb",
   "repolex:trackedCommit": [
     {
-      "@id": "https://repolex.ai/r/mongodb/mongo-rust-driver/commit/16bc932cf4d8a161a49e8161b2158228a6ca8956",
-      "git:hexsha": "16bc932cf4d8a161a49e8161b2158228a6ca8956",
+      "@id": "https://repolex.ai/r/mongodb/mongo-rust-driver/commit/e72eafbe78642358c09a4497e5825e9efc7a799d",
+      "git:hexsha": "e72eafbe78642358c09a4497e5825e9efc7a799d",
       "repolex:parseStatus": "metadata_complete",
-      "git:tagName": "v3.9.1"
+      "git:tagName": "v3.9.0"
     },
     {
       "@id": "https://repolex.ai/r/mongodb/mongo-rust-driver/commit/ef3c50ae1585a174e242696716f1e74c1248adbf",
@@ -450,10 +450,10 @@
       "git:tagName": "v3.8.2"
     },
     {
-      "@id": "https://repolex.ai/r/mongodb/mongo-rust-driver/commit/e72eafbe78642358c09a4497e5825e9efc7a799d",
-      "git:hexsha": "e72eafbe78642358c09a4497e5825e9efc7a799d",
+      "@id": "https://repolex.ai/r/mongodb/mongo-rust-driver/commit/16bc932cf4d8a161a49e8161b2158228a6ca8956",
+      "git:hexsha": "16bc932cf4d8a161a49e8161b2158228a6ca8956",
       "repolex:parseStatus": "pending",
-      "git:tagName": "v3.9.0"
+      "git:tagName": "v3.9.1"
     }
   ]
 }
