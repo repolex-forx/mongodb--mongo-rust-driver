@@ -1,0 +1,30 @@
+[2026-11-24T12:04:38Z] === ENRICH ITERATION 2 START | repo=mongodb/mongo-rust-driver sha=36305163 ===
+[2026-11-24T12:04:38Z] [iter=2] PHASE START: enrich repo=mongodb/mongo-rust-driver sha=36305163 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/36305163-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/36305163ced01154c61fc30bdb0aa6b80c772e7b.nq.gz
+[2026-11-24T12:04:38Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-24T12:05:15Z] [iter=2] AST store loaded triples=2984927 load_secs=36 mem_mb=948 MB
+[2026-11-24T12:05:15Z] [iter=2] Step 2: Finding LSP targets mem_mb=948 MB
+[2026-11-24T12:05:22Z] [iter=2] LSP targets found call_sites=27987 imports=684 extends=0 implements=423 secs=7
+[2026-11-24T12:05:24Z] [iter=2] Loaded checkpoint partial graph triples=33591
+[2026-11-24T12:05:24Z] [iter=2] Primed enclosing-def cache from persisted triples entries=336
+[2026-11-24T12:05:29Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=948 MB
+[2026-11-24T12:05:44Z] [iter=2] Position index built positions=197799 nodes_with_types=241155 secs=15 mem_mb=948 MB
+[2026-11-24T12:05:44Z] [iter=2] Step 3: Starting LSP resolution mem_mb=948 MB already_completed_types=[] already_completed_files=11
+[2026-11-24T12:05:44Z] [iter=2] Resolving target type target_type=call_site count=27987
+[2026-11-24T12:06:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=driver/src/client/options.rs
+[2026-11-24T12:07:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=1 resolved=177 errors=0 current=driver/src/test/csfle/prose.rs
+[2026-11-24T12:13:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=3 resolved=939 errors=0 current=driver/src/test/change_stream.rs
+[2026-11-24T12:15:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=4 resolved=1260 errors=0 current=driver/src/operation/update.rs
+[2026-11-24T12:16:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.0 files_done=6 resolved=1356 errors=0 current=driver/src/client/auth/oidc.rs
+[2026-11-24T12:17:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=13.1 files_done=7 resolved=1616 errors=0 current=driver/src/test/spec/read_write_concern/connection_string.rs
+[2026-11-24T12:19:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=11 resolved=1888 errors=0 current=driver/src/test/csfle/kmip.rs
+[2026-11-24T12:20:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.2 files_done=13 resolved=2067 errors=0 current=driver/src/test/spec/handshake.rs
+[2026-11-24T12:23:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=14 resolved=2447 errors=0 current=driver/src/test/documentation_examples.rs
+[2026-11-24T12:27:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=22.7 files_done=15 resolved=2860 errors=0 current=macros/src/rustdoc.rs
+[2026-11-24T12:28:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=23.7 files_done=18 resolved=3120 errors=0 current=driver/src/test/timeseries.rs
+[2026-11-24T12:28:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=20 resolved=3236 errors=0 current=driver/src/action/bulk_write.rs
+[2026-11-24T12:29:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.9 files_done=22 resolved=3321 errors=0 current=driver/src/db.rs
+[2026-11-24T12:31:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.9 files_done=24 resolved=3579 errors=0 current=driver/src/client/executor.rs
+[2026-11-24T12:34:39Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=35 new_files_this_iter=24 mem_mb=948 MB
+[2026-11-24T12:34:39Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/36305163ced01154c61fc30bdb0aa6b80c772e7b.nq.gz triples=73605
+[2026-11-24T12:34:40Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-11-24T12:34:40Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1802 elapsed_min=30.0 files_completed=35
