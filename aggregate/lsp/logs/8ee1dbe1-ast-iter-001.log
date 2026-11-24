@@ -1,0 +1,7 @@
+[2026-11-24T15:08:58Z] === AST ITERATION 1 START | repo=mongodb/mongo-rust-driver sha=8ee1dbe1 ===
+[2026-11-24T15:08:58Z] [iter=1] PHASE START: ast repo=mongodb/mongo-rust-driver sha=8ee1dbe1
+[2026-11-24T15:08:58Z] [iter=1] Building AST aggregate chunks
+[2026-11-24T15:14:05Z] [iter=1] AST chunks built count=1 triples=2974590
+[2026-11-24T15:14:05Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/8ee1dbe16e0e605d2aa909f77385aa4f453c1f45/.complete
+[2026-11-24T15:14:05Z] [iter=1] PHASE END: ast elapsed_s=307 elapsed_min=5.1
+[2026-11-24T15:14:05Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
