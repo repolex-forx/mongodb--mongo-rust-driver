@@ -1,0 +1,30 @@
+[2026-11-25T07:08:48Z] === ENRICH ITERATION 3 START | repo=mongodb/mongo-rust-driver sha=f8e0886b ===
+[2026-11-25T07:08:48Z] [iter=3] PHASE START: enrich repo=mongodb/mongo-rust-driver sha=f8e0886b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/f8e0886b-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/f8e0886ba29677a06745bc0597e29bb7ad906002.nq.gz
+[2026-11-25T07:08:48Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-25T07:09:14Z] [iter=3] AST store loaded triples=2921858 load_secs=25 mem_mb=943 MB
+[2026-11-25T07:09:14Z] [iter=3] Step 2: Finding LSP targets mem_mb=943 MB
+[2026-11-25T07:09:23Z] [iter=3] LSP targets found call_sites=27147 imports=691 extends=0 implements=410 secs=9
+[2026-11-25T07:09:27Z] [iter=3] Loaded checkpoint partial graph triples=75196
+[2026-11-25T07:09:27Z] [iter=3] Primed enclosing-def cache from persisted triples entries=844
+[2026-11-25T07:09:33Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=943 MB
+[2026-11-25T07:09:53Z] [iter=3] Position index built positions=193946 nodes_with_types=235979 secs=19 mem_mb=943 MB
+[2026-11-25T07:09:53Z] [iter=3] Step 3: Starting LSP resolution mem_mb=943 MB already_completed_types=[] already_completed_files=40
+[2026-11-25T07:09:53Z] [iter=3] Resolving target type target_type=call_site count=27147
+[2026-11-25T07:10:26Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=0 resolved=0 errors=0 current=driver/src/cmap/test.rs
+[2026-11-25T07:11:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=86 errors=0 current=driver/src/test/index_management.rs
+[2026-11-25T07:12:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=2 resolved=245 errors=0 current=driver/src/cursor/common.rs
+[2026-11-25T07:14:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=3 resolved=438 errors=0 current=driver/src/client/auth/x509.rs
+[2026-11-25T07:17:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=6 resolved=752 errors=0 current=benchmarks/src/fs.rs
+[2026-11-25T07:20:24Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=10 resolved=1068 errors=0 current=driver/src/operation/update.rs
+[2026-11-25T07:22:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=12 resolved=1397 errors=0 current=driver/src/test/spec/auth.rs
+[2026-11-25T07:23:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=14.3 files_done=15 resolved=1591 errors=0 current=driver/src/client/options.rs
+[2026-11-25T07:26:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=17.9 files_done=16 resolved=2349 errors=0 current=driver/src/test/spec/unified_runner/operation/list.rs
+[2026-11-25T07:28:05Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=19 resolved=2512 errors=0 current=driver/src/concern.rs
+[2026-11-25T07:28:35Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=20 resolved=2572 errors=0 current=driver/src/index/options.rs
+[2026-11-25T07:36:18Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=24 resolved=3479 errors=0 current=driver/src/test/csfle.rs
+[2026-11-25T07:37:41Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.9 files_done=26 resolved=3641 errors=0 current=driver/src/test/spec/unified_runner/operation/find.rs
+[2026-11-25T07:38:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=29.4 files_done=27 resolved=3723 errors=0 current=driver/src/cmap/test/integration.rs
+[2026-11-25T07:38:52Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=67 new_files_this_iter=27 mem_mb=943 MB
+[2026-11-25T07:38:52Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/f8e0886ba29677a06745bc0597e29bb7ad906002.nq.gz triples=112916
+[2026-11-25T07:38:53Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-25T07:38:53Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1804 elapsed_min=30.1 files_completed=67
