@@ -1,0 +1,29 @@
+[2026-11-25T20:59:02Z] === ENRICH ITERATION 2 START | repo=mongodb/mongo-rust-driver sha=0b496120 ===
+[2026-11-25T20:59:02Z] [iter=2] PHASE START: enrich repo=mongodb/mongo-rust-driver sha=0b496120 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0b496120-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0b49612095236863fca7395cb48bdac8e504e2b8.nq.gz
+[2026-11-25T21:00:09Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-25T21:00:39Z] [iter=2] AST store loaded triples=2710860 load_secs=29 mem_mb=944 MB
+[2026-11-25T21:00:39Z] [iter=2] Step 2: Finding LSP targets mem_mb=944 MB
+[2026-11-25T21:00:45Z] [iter=2] LSP targets found call_sites=25360 imports=690 extends=0 implements=372 secs=6
+[2026-11-25T21:00:46Z] [iter=2] Loaded checkpoint partial graph triples=32269
+[2026-11-25T21:00:46Z] [iter=2] Primed enclosing-def cache from persisted triples entries=460
+[2026-11-25T21:00:50Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=944 MB
+[2026-11-25T21:01:02Z] [iter=2] Position index built positions=179587 nodes_with_types=218567 secs=11 mem_mb=944 MB
+[2026-11-25T21:01:02Z] [iter=2] Step 3: Starting LSP resolution mem_mb=944 MB already_completed_types=[] already_completed_files=16
+[2026-11-25T21:01:02Z] [iter=2] Resolving target type target_type=call_site count=25360
+[2026-11-25T21:01:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=0 resolved=0 errors=0 current=src/test/util.rs
+[2026-11-25T21:02:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=3 resolved=194 errors=0 current=.evergreen/aws-ecs-test/src/main.rs
+[2026-11-25T21:05:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=5 resolved=595 errors=0 current=src/test/spec/retryable_writes.rs
+[2026-11-25T21:07:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=6 resolved=823 errors=0 current=.evergreen/azure-kms-test/src/main.rs
+[2026-11-25T21:08:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=11 resolved=1004 errors=0 current=src/test/util/matchable.rs
+[2026-11-25T21:11:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.0 files_done=13 resolved=1382 errors=0 current=macros/src/action_impl.rs
+[2026-11-25T21:13:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=15 resolved=1828 errors=0 current=src/change_stream/event.rs
+[2026-11-25T21:15:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.5 files_done=18 resolved=2071 errors=0 current=src/test/spec/v2_runner/operation.rs
+[2026-11-25T21:18:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=19 resolved=2572 errors=0 current=src/sync/test.rs
+[2026-11-25T21:22:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=21 resolved=3124 errors=0 current=src/operation/drop_database.rs
+[2026-11-25T21:23:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.9 files_done=24 resolved=3261 errors=0 current=src/test/bulk_write.rs
+[2026-11-25T21:26:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=27.2 files_done=25 resolved=3574 errors=0 current=src/runtime/tls_openssl.rs
+[2026-11-25T21:27:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=29 resolved=3773 errors=0 current=src/srv.rs
+[2026-11-25T21:29:03Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=47 new_files_this_iter=31 mem_mb=944 MB
+[2026-11-25T21:29:03Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0b49612095236863fca7395cb48bdac8e504e2b8.nq.gz triples=74503
+[2026-11-25T21:29:04Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-11-25T21:29:04Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1802 elapsed_min=30.0 files_completed=47
