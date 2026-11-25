@@ -1,0 +1,42 @@
+{
+  "commit_sha": "0b49612095236863fca7395cb48bdac8e504e2b8",
+  "completed_files": [
+    "benchmarks/src/bench.rs",
+    "src/client.rs",
+    "src/client/auth/oidc.rs",
+    "src/cmap/test/event.rs",
+    "src/gridfs/upload.rs",
+    "src/operation/abort_transaction.rs",
+    "src/sdam/description/topology/server_selection.rs",
+    "src/sdam/description/topology/test/sdam.rs",
+    "src/sdam/public.rs",
+    "src/test/cursor.rs",
+    "src/test/documentation_examples.rs",
+    "src/test/spec/oidc.rs",
+    "src/test/spec/transactions.rs",
+    "src/test/spec/unified_runner/entity.rs",
+    "src/test/spec/v2_runner.rs",
+    "src/test/spec/v2_runner/test_file.rs"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/mongodb/mongo-rust-driver/lsp/0b49612095236863fca7395cb48bdac8e504e2b8",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/0b49612095236863fca7395cb48bdac8e504e2b8.nq.gz",
+    "call_sites": 25360,
+    "import_statements": 690,
+    "call_targets_resolved": 3227,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 0,
+    "extends_clauses": 0,
+    "implements_clauses": 372,
+    "import_modules_denormalized": 1308,
+    "import_symbols_denormalized": 8,
+    "extends_class_denormalized": 0,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 1802
+}
