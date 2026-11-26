@@ -1,0 +1,35 @@
+[2026-11-26T12:09:19Z] === ENRICH ITERATION 2 START | repo=mongodb/mongo-rust-driver sha=974465a7 ===
+[2026-11-26T12:09:19Z] [iter=2] PHASE START: enrich repo=mongodb/mongo-rust-driver sha=974465a7 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/974465a7-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/974465a7f2605dc3e8b0cf6094dae7bf7f7b3046.nq.gz
+[2026-11-26T12:10:27Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-26T12:10:51Z] [iter=2] AST store loaded triples=2704350 load_secs=23 mem_mb=940 MB
+[2026-11-26T12:10:51Z] [iter=2] Step 2: Finding LSP targets mem_mb=940 MB
+[2026-11-26T12:10:59Z] [iter=2] LSP targets found call_sites=25296 imports=687 extends=0 implements=374 secs=8
+[2026-11-26T12:11:02Z] [iter=2] Loaded checkpoint partial graph triples=55091
+[2026-11-26T12:11:02Z] [iter=2] Primed enclosing-def cache from persisted triples entries=725
+[2026-11-26T12:11:07Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=940 MB
+[2026-11-26T12:11:25Z] [iter=2] Position index built positions=179101 nodes_with_types=217963 secs=17 mem_mb=940 MB
+[2026-11-26T12:11:25Z] [iter=2] Step 3: Starting LSP resolution mem_mb=940 MB already_completed_types=[] already_completed_files=47
+[2026-11-26T12:11:25Z] [iter=2] Resolving target type target_type=call_site count=25296
+[2026-11-26T12:11:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=0 resolved=0 errors=0 current=src/test/coll.rs
+[2026-11-26T12:13:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=1 resolved=221 errors=0 current=src/sdam/topology.rs
+[2026-11-26T12:16:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=2 resolved=459 errors=0 current=src/runtime/http.rs
+[2026-11-26T12:17:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=6 resolved=545 errors=0 current=src/test/client.rs
+[2026-11-26T12:21:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=7 resolved=955 errors=0 current=src/client/csfle/state_machine.rs
+[2026-11-26T12:22:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=10 resolved=1045 errors=0 current=src/client/auth/oidc.rs
+[2026-11-26T12:23:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=11 resolved=1243 errors=0 current=src/operation/create.rs
+[2026-11-26T12:24:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=15 resolved=1460 errors=0 current=src/coll.rs
+[2026-11-26T12:27:09Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=17 resolved=1721 errors=0 current=macros/src/rustdoc.rs
+[2026-11-26T12:27:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=19 resolved=1844 errors=0 current=benchmarks/src/bench/bson_decode.rs
+[2026-11-26T12:29:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=20.1 files_done=22 resolved=2087 errors=0 current=src/client/options/test.rs
+[2026-11-26T12:29:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=23 resolved=2199 errors=0 current=benchmarks/src/main.rs
+[2026-11-26T12:31:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=22.6 files_done=26 resolved=2373 errors=0 current=src/sdam/srv_polling.rs
+[2026-11-26T12:32:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=23.2 files_done=28 resolved=2442 errors=0 current=src/test/bulk_write.rs
+[2026-11-26T12:34:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=29 resolved=2651 errors=0 current=benchmarks/src/bench/insert_one.rs
+[2026-11-26T12:35:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=25.8 files_done=31 resolved=2761 errors=0 current=src/test/spec/v2_runner/operation.rs
+[2026-11-26T12:36:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=32 resolved=3035 errors=0 current=src/client/csfle/client_encryption.rs
+[2026-11-26T12:38:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=28.7 files_done=35 resolved=3185 errors=0 current=src/sdam/description/topology/server_selection/test/logic.rs
+[2026-11-26T12:39:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.9 files_done=40 resolved=3365 errors=0 current=src/sdam/description/server.rs
+[2026-11-26T12:39:20Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=87 new_files_this_iter=40 mem_mb=940 MB
+[2026-11-26T12:39:20Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/974465a7f2605dc3e8b0cf6094dae7bf7f7b3046.nq.gz triples=86378
+[2026-11-26T12:39:21Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-11-26T12:39:21Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=87
